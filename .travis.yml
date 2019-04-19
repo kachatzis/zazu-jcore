@@ -1,0 +1,7 @@
+language: java
+jdk:
+  - openjdk8
+
+install:
+  - mvn clean package
+  - mvn exec:java -Dexec.mainClass="com.zazu.jcoreRuntime.Main"
